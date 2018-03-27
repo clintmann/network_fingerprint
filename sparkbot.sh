@@ -32,9 +32,9 @@ read BOTTOKEN
 wget "https://raw.githubusercontent.com/clintmann/network_fingerprint/master/fingerprintBOT.py"
 
 
-sed -i "s<BOTNAME>/$BOTNAME/"  scripts/fingerprintBOT.py
-sed -i "s/<BOTEMAIL>/$BOTEMAIL/"  scripts/fingerprintBOT.py
-sed -i "s/<BOTTOKEN>/$BOTTOKEN/"  scripts/fingerprintBOT.py
+sed -i "s<BOTNAME>/$BOTNAME/"  fingerprintBOT.py
+sed -i "s/<BOTEMAIL>/$BOTEMAIL/"  fingerprintBOT.py
+sed -i "s/<BOTTOKEN>/$BOTTOKEN/"  fingerprintBOT.py
 
 
 #nohup python sparkbot.py &
