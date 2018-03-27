@@ -16,8 +16,9 @@ Illustrates the following concept:
 __author__ = "Clint Mann"
 __license__ = "MIT"
 
-bot_email = "<BOTEMAIL>"
+
 bot_name = "<BOTNAME>"
+bot_email = "<BOTEMAIL>"
 token = "<BOTTOKEN>"
 
 
