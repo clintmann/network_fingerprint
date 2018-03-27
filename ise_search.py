@@ -22,7 +22,7 @@ __license__ = "MIT"
 ise_mnt_usr = "<ISEUSER>"
 ise_pwd = "<ISEUSERPWD>"
 ip_addr = "<ISEIPADDR>"
-base_url = "https://" + str(ip_address)
+base_url = "https://" + str(ip_addr)
 
 
 def auth(username, password):
