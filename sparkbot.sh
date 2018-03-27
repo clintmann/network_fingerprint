@@ -36,5 +36,4 @@ sed -i "s/<BOTNAME>/$BOTNAME/" fingerprintBOT.py
 sed -i "s/<BOTEMAIL>/$BOTEMAIL/" fingerprintBOT.py
 sed -i "s/<BOTTOKEN>/$BOTTOKEN/" fingerprintBOT.py
 
-
 #nohup python fingerprintBOT.py &
