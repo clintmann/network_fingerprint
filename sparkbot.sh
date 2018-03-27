@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+
+echo
+echo "###############################################"
+echo "Thank you for using the Network Fingerprint App"
+echo  "This script will set up the environment to "
+echo  "configure the Fingerprint Sparkbot"
+echo "###############################################"
+echo
+
+echo "Press Enter to continue..."
+read confirm
+
+echo "Please enter the NAME of the Bot : "
+read BOTNAME
+
+echo "Please enter the EMAIL ADDRESS of the Bot : "
+read BOTEMAIL
+
+echo "Please enter the AUTH TOKEN for the Bot : "
+read BOTTOKEN
+
+# pip install required python libraries
+#sudo -E pip install --upgrade pip
+# following needed when upgrading pip in Amazon Linux
+#sudo -E cp /usr/local/bin/pip /usr/sbin/
+
+# create a folder to store scripts in
+mkdir /scripts
+
+wget "https://raw.githubusercontent.com/clintmann/onbox_assistant/master/onbox_assistant_SparkAlerts.py" "/scripts/"
+
+
+sed -i "s<BOTNAME>/$BOTNAME/"  /scripts/fingerprintBOT.py
+sed -i "s/<BOTEMAIL>/$BOTEMAIL/"  /scripts/fingerprintBOT.py
+sed -i "s/<BOTTOKEN>/$BOTTOKEN/"  /scripts/fingerprintBOT.py
+
+
+#nohup python sparkbot.py &
