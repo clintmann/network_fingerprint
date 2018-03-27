@@ -27,14 +27,14 @@ read BOTTOKEN
 #sudo -E cp /usr/local/bin/pip /usr/sbin/
 
 # create a folder to store scripts in
-sudo mkdir /scripts
+#sudo mkdir scripts/
 
-wget "https://raw.githubusercontent.com/clintmann/network_fingerprint/master/fingerprintBOT.pyfingerprintBOT.py" "/scripts/"
+wget "https://raw.githubusercontent.com/clintmann/network_fingerprint/master/fingerprintBOT.pyfingerprintBOT.py" "scripts/"
 
 
-sed -i "s<BOTNAME>/$BOTNAME/"  /scripts/fingerprintBOT.py
-sed -i "s/<BOTEMAIL>/$BOTEMAIL/"  /scripts/fingerprintBOT.py
-sed -i "s/<BOTTOKEN>/$BOTTOKEN/"  /scripts/fingerprintBOT.py
+sed -i "s<BOTNAME>/$BOTNAME/"  scripts/fingerprintBOT.py
+sed -i "s/<BOTEMAIL>/$BOTEMAIL/"  scripts/fingerprintBOT.py
+sed -i "s/<BOTTOKEN>/$BOTTOKEN/"  scripts/fingerprintBOT.py
 
 
 #nohup python sparkbot.py &
