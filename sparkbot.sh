@@ -19,7 +19,7 @@ echo "Please enter the EMAIL ADDRESS of the Bot : "
 read BOTEMAIL
 
 echo "Please enter the AUTH TOKEN for the Bot : "
-read BOTTOKEN
+read -s BOTTOKEN
 
 # pip install required python libraries
 #sudo -E pip install --upgrade pip
