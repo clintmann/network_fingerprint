@@ -3,7 +3,6 @@ import requests
 import time
 from activelist import startpgm
 
-
 """
 Network Fingerprint
 Author: Clint Mann
