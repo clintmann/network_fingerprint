@@ -71,7 +71,7 @@ def index(request):
         elif result.get('text', '').lower():
             msg = "**Searching...**"
 
-        if msg is not None:
+        if msg != None:
             sendSparkPOST("https://api.ciscospark.com/v1/messages",
                           {"roomId": webhook['data']['roomId'], "markdown": msg})
 
