@@ -29,7 +29,7 @@ read BOTTOKEN
 # create a folder to store scripts in
 #sudo mkdir scripts/
 
-wget "https://raw.githubusercontent.com/clintmann/network_fingerprint/master/fingerprintBOT.pyfingerprintBOT.py" "scripts/"
+wget "https://raw.githubusercontent.com/clintmann/network_fingerprint/master/fingerprintBOT.py"  "scripts/"
 
 
 sed -i "s<BOTNAME>/$BOTNAME/"  scripts/fingerprintBOT.py
