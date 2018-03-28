@@ -6,6 +6,6 @@ ADD . /app
 
 WORKDIR /app
 
-RUN pip install -r requirements.txt
+RUN pip install -r /app/fingeprint-app/requirements.txt
 
 CMD [ "python", "./finerprint-app/monitorspark.py" ]
