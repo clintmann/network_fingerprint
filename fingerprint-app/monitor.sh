@@ -39,7 +39,6 @@ read  ISEUSER
 echo "Please enter the PASSWORD for the USER entered above : "
 read -s ISEUSERPWD
 
-
 wget "https://raw.githubusercontent.com/clintmann/network_fingerprint/master/monitorspark.py"
 wget "https://raw.githubusercontent.com/clintmann/network_fingerprint/master/ise.py"
 
