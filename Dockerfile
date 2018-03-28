@@ -1,4 +1,4 @@
-FROM python:3-alpine3.4
+FROM python:alpine3.4
 MAINTAINER Clint Mann "climann2@cisco.com"
 
 
