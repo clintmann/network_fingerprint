@@ -27,6 +27,7 @@ echo "Please enter the Spark ROOM ID : "
 read -s ROOMID
 
 echo "Next we will set up AUTHENICATION for ISE"
+echo "-----------------------------------------"
 echo "Press Enter to continue..."
 read confirm
 
