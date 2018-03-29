@@ -42,10 +42,10 @@ echo "Please enter the PASSWORD for the USER entered above : "
 read -s ISEUSERPWD
 
 
-docker run -de TOKEN=$TOKEN /fingerprint-app/monitorspark.py \
-    -e BOTTOKEN=$BOTTOKEN /fingerprint-app/monitorspark.py \
-    -e ROOMID=$ROOMID /fingerprint-app/monitorspark.py \
-    -e ISEIPADDR=$ISEIPADDR /fingerprint-app/ise_search.py \
-    -e ISEUSER=$ISEUSER /fingerprint-app/ise_search.py \
-    -e ISEUSERPWD=$ISEUSERPWD /fingerprint-app/ise_search.py \
+docker run -de TOKEN=$TOKEN \
+    -e BOTTOKEN=$BOTTOKEN \
+    -e ROOMID=$ROOMID \
+    -e ISEIPADDR=$ISEIPADDR \
+    -e ISEUSER=$ISEUSER \
+    -e ISEUSERPWD=$ISEUSERPWD \
     clintmann/network_fingerprint:i386
