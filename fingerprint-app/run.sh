@@ -42,7 +42,8 @@ echo "Please enter the PASSWORD for the USER entered above : "
 read -s ISEUSERPWD
 
 
-docker run -de TOKEN=$TOKEN \
+docker run -- name=network_fingerprint \
+    -de TOKEN=$TOKEN \
     -e BOTTOKEN=$BOTTOKEN \
     -e ROOMID=$ROOMID \
     -e ISEIPADDR=$ISEIPADDR \
