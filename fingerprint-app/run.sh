@@ -48,4 +48,4 @@ docker run -de TOKEN=$TOKEN \
     -e ISEIPADDR=$ISEIPADDR \
     -e ISEUSER=$ISEUSER \
     -e ISEUSERPWD=$ISEUSERPWD \
-    clintmann/network_fingerprint:i386
+    clintmann/network_fingerprint:latest
