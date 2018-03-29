@@ -46,8 +46,8 @@ sed -i "s/<TOKEN>/$TOKEN/" monitorspark.py
 sed -i "s/<BOTTOKEN>/$BOTTOKEN/" monitorspark.py
 sed -i "s/<ROOMID>/$ROOMID/" monitorspark.py
 
-sed -i "s/<ISEIPADDR>/$ISEIPADDR/" ise.py
-sed -i "s/<ISEUSER>/$ISEUSER/" ise.py
-sed -i "s/<ISEUSERPWD>/$ISEUSERPWD/" ise.py
+sed -i "s/<ISEUSER>/$ISEUSER/" ise_search.py
+sed -i "s/<ISEUSERPWD>/$ISEUSERPWD/" ise_search.py
+sed -i "s/<ISEIPADDR>/$ISEIPADDR/" ise_search.py
 
 

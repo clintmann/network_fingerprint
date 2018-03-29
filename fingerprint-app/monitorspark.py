@@ -1,9 +1,9 @@
 #! /usr/bin/env python
 import os
-import requests
 import time
-from ise_search import startSearch
 
+import requests
+from ise_search import startSearch
 
 """
 Network Fingerprint
