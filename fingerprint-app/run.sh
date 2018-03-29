@@ -43,8 +43,8 @@ read -s ISEUSERPWD
 
 
 docker run -de TOKEN=$TOKEN /fingerprint-app/monitorspark.py \
-    -e APIC_BOTTOKEN=$BOTTOKEN /fingerprint-app/monitorspark.py \
-    -e APIC_PASSWORD=$ROOMID /fingerprint-app/monitorspark.py \
+    -e BOTTOKEN=$BOTTOKEN /fingerprint-app/monitorspark.py \
+    -e ROOMID=$ROOMID /fingerprint-app/monitorspark.py \
     -e ISEIPADDR=$ISEIPADDR /fingerprint-app/ise_search.py \
     -e ISEUSER=$ISEUSER /fingerprint-app/ise_search.py \
     -e ISEUSERPWD=$ISEUSERPWD /fingerprint-app/ise_search.py \
