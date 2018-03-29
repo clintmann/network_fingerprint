@@ -41,12 +41,5 @@ echo "Please enter the PASSWORD for the USER entered above : "
 read -s ISEUSERPWD
 
 
-docker run -de TOKEN=$TOKEN monitorspark.py\
-    -e APIC_BOTTOKEN=$BOTTOKEN monitorspark.py\
-    -e APIC_PASSWORD=$ROOMID monitorspark.py\
-    -e ISEIPADDR=$ISEIPADDR ise_search.py\
-    -e ISEUSER=$ISEUSER ise_search.py\
-    -e ISEUSERPWD=$ISEUSERPWD ise_search.py\
-    climann2/network_fingerprint:i386
-
-
+python ./app/fingerprint-app/monitorspark.py $TOKEN,$BOTTOKEN,$ROOMID
+python ./app/fingerprint-app/ise_search.py $ISEIPADDR $ISEUSER $ISEUSERPWD
