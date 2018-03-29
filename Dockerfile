@@ -6,6 +6,6 @@ ADD . /app
 
 WORKDIR /app
 
-RUN pip install -r ./fingerprint-app/requirements.txt
+RUN pip install -r requirements.txt
 
 CMD [ "python", "./fingerprint-app/monitorspark.py" ]
