@@ -1,16 +1,7 @@
 #! /usr/bin/env python
-
-
-
 import os
 import requests
 import time
-
-my_token = os.environ['TOKEN']
-bot_token = os.environ['BOTTOKEN']
-room_id = os.environ['ROOMID']
-base_url = "https://api.ciscospark.com/v1/messages"
-
 from ise_search import startSearch
 
 
@@ -29,7 +20,10 @@ Illustrates the following concept:
 __author__ = "Clint Mann"
 __license__ = "MIT"
 
-
+my_token = os.environ['TOKEN']
+bot_token = os.environ['BOTTOKEN']
+room_id = os.environ['ROOMID']
+base_url = "https://api.ciscospark.com/v1/messages"
 
 
 def getMSG(base_url, my_token, room_id):
