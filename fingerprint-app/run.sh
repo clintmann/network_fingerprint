@@ -18,13 +18,13 @@ echo "Press Enter to continue..."
 read confirm
 
 echo "Please enter YOUR Spark AUTHENTICATION TOKEN : "
-read -s TOKEN
+read token
 
 echo "Please enter the Spark AUTHENTICATION TOKEN of the BOT : "
-read -s BOTTOKEN
+read bottoken
 
 echo "Please enter the Spark ROOM ID : "
-read -s ROOMID
+read roomid
 
 echo
 echo "Next we will set up AUTHENICATION for ISE"
@@ -33,20 +33,20 @@ echo "Press Enter to continue..."
 read confirm
 
 echo "Please enter the IP ADDRESS of the ISE SERVER : "
-read  ISEIPADDR
+read  iseipaddr
 
 echo "Please enter ISE USERNAME (must have MnT Admin rights) : "
-read  ISEUSER
+read  iseuser
 
 echo "Please enter the PASSWORD for the USER entered above : "
-read -s ISEUSERPWD
+read -s iseuserpwd
 
 
-docker run -- name=network_fingerprint \
-    -de TOKEN=$TOKEN \
-    -e BOTTOKEN=$BOTTOKEN \
-    -e ROOMID=$ROOMID \
-    -e ISEIPADDR=$ISEIPADDR \
-    -e ISEUSER=$ISEUSER \
-    -e ISEUSERPWD=$ISEUSERPWD \
+docker run --name network_fingerprint \
+    -de TOKEN=$token \
+    -e BOTTOKEN=$bottoken \
+    -e ROOMID=$roomid \
+    -e ISEIPADDR=$iseipaddr \
+    -e ISEUSER=$iseuser \
+    -e ISEUSERPWD=$iseuserpwd \
     clintmann/network_fingerprint:latest
