@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM alpine:3.5
 MAINTAINER Clint Mann "climann2@cisco.com"
 
 
@@ -8,4 +8,4 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-CMD [ "python", "./finerprint-app/monitorspark.py" ]
+CMD [ "python3", "./finerprint-app/monitorspark.py" ]
