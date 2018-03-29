@@ -26,13 +26,14 @@ read -s BOTTOKEN
 echo "Please enter the Spark ROOM ID : "
 read -s ROOMID
 
+echo
 echo "Next we will set up AUTHENICATION for ISE"
 echo "-----------------------------------------"
 echo "Press Enter to continue..."
 read confirm
 
 echo "Please enter the IP ADDRESS of the ISE SERVER : "
-read -s ISEIPADDR
+read  ISEIPADDR
 
 echo "Please enter ISE USERNAME (must have MnT Admin rights) : "
 read  ISEUSER
