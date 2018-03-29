@@ -8,4 +8,4 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-CMD [ "python", "./finerprint-app/monitorspark.py" ]
+CMD [ "python", "./fingerprint-app/monitorspark.py" ]
