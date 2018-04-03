@@ -27,7 +27,7 @@ echo "Please enter the Spark ROOM ID : "
 read roomid
 
 echo
-echo "Next we will set up AUTHENICATION for ISE"
+echo "Next we will set up AUTHENTICATION for ISE"
 echo "-----------------------------------------"
 echo "Press Enter to continue..."
 read confirm
@@ -41,12 +41,18 @@ read  iseuser
 echo "Please enter the PASSWORD for the USER entered above : "
 read -s iseuserpwd
 
+export TOKEN=${token}
+export BOTTOKEN=${bottoken}
+export ROOMID=${roomid}
+export ISEUSER=${iseuser}
+export ISEUSERPWD=${iseuserpwd}
+export ISEIPADDR=${iseipaddr}
 
 docker run --name network_fingerprint \
-    -de TOKEN=$token \
-    -e BOTTOKEN=$bottoken \
-    -e ROOMID=$roomid \
-    -e ISEIPADDR=$iseipaddr \
-    -e ISEUSER=$iseuser \
-    -e ISEUSERPWD=$iseuserpwd \
+    -de TOKEN=${token} \
+    -e BOTTOKEN=${bottoken} \
+    -e ROOMID=${roomid} \
+    -e ISEIPADDR=${iseipaddr} \
+    -e ISEUSER=${iseuser} \
+    -e ISEUSERPWD=${iseuserpwd} \
     clintmann/network_fingerprint:latest
